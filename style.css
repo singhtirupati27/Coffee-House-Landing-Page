@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.page-wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* Navbar start */
+.navbar {
+    background-color: black;
+    border: 1px solid red;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+ul li a {
+    color: white;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+/* Navbar end */
+
+/* Home page start */
+.home-page {
+    height: 90vh;
+    border: 1px solid red;
+    background: url("./img/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hm-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-text {
+    color: white;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.home-btm-text {
+    /* display: inline-block; */
+    color: white;
+    background-color: black;
+}
+
+/* .home-btn-text:nth-child() {
+    background-color: black;
+    color: white;
+}
+
+.home-btm-text:last-child {
+    color: white;
+} */
+/* Home page end */
