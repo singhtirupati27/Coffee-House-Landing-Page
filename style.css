@@ -15,7 +15,6 @@ div {
 
 ul {
     list-style: none;
-    display: inline-block;
 }
 
 ul li {
@@ -28,26 +27,31 @@ a {
 }
 
 .page-wrapper {
-    width: 1180px;
+    width: 850px;
     margin: 0 auto;
+    border: 1px solid brown;
 }
 
 /* Navbar start */
 .navbar {
     background-color: black;
-    border: 1px solid red;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
     padding: 10px 5px;
-    width: 100%;
+}
+
+ul li {
+    display: flex;
+    width: 25%;
 }
 
 ul li a {
     color: white;
     padding: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 ul li a:hover {
@@ -59,11 +63,12 @@ ul li a:hover {
 /* Home page start */
 .home-page {
     height: 90vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url("./img/coffeehouse.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .hm-wrap {
@@ -77,20 +82,59 @@ ul li a:hover {
     color: white;
     font-size: 50px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .home-btm-text {
-    /* display: inline-block; */
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
     color: white;
-    background-color: black;
+    font-size: 13px;
+    word-spacing: 3px;
 }
 
-/* .home-btn-text:nth-child() {
+.home-btm-text p:first-child {
     background-color: black;
-    color: white;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 7px 10px;
 }
 
-.home-btm-text:last-child {
-    color: white;
-} */
+.home-btm-text p:last-child {
+    float: right;
+    margin-right: 20px;
+    padding: 7px 10px;
+}
 /* Home page end */
+
+/* About start */
+.about-page {
+    border: 1px solid green;
+}
+
+.abt-wrap {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.abt-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.abt-heading h2 {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding: 5px 8px;
+}
+
+.abt-img img {
+    width: 100%;
+    height: 100%;
+}
+/* About end */
