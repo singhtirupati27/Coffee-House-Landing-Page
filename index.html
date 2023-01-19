@@ -10,6 +10,7 @@
 <body>
     <!-- Main container start -->
     <div class="main-container">
+
         <!-- Navbar start -->
         <div class="navbar">
             <ul class="nav">
@@ -27,10 +28,6 @@
                 <div class="home-text">
                     <h1>the <br>Cafe</h1>
                 </div>
-                <!-- <div class="home-btm-text">
-                    <p>Open from 6am to 5pm</p>
-                    <p>15 Adr street, 5015</p>
-                </div> -->
             </div>
             <div class="home-btm-text">
                 <p>Open from 6am to 5pm</p>
@@ -41,8 +38,8 @@
 
         <!-- About page start -->
         <div class="about-page" id="about">
-            <div class="page-wrapper abt-wrap">
-                <div class="abt-heading">
+            <div class="page-wrapper abt-wrap letter-style">
+                <div class="heading">
                     <h2>ABOUT THE CAFE</h2>
                 </div>
                 <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -51,7 +48,6 @@
                     <p><q><i>Use products from nature for what it's worth - but never too early, nor too late.</q> Fresh is the new sweet.</i></p>
                     <p>Chef, Coffeeist and Owner: Liam Brown</p>
                 </div>
-                <!-- <img src="./img/coffeeshop.jpg" alt=""> -->
                 <div class="abt-img">
                     <img src="./img/coffeeshop.jpg" alt="">
                 </div>
@@ -65,22 +61,24 @@
 
         <!-- Menu page start -->
         <div class="menu-page" id="menu">
-            <div class="page-wrapper">
-                <h2>THE MENU</h2>
-                <div class="menu-type">
-                    <h4>Eat</h4>
-                    <h4>Drink</h4>
+            <div class="page-wrapper menu-wrap">
+                <div class="heading">
+                    <h2>THE MENU</h2>
                 </div>
-                <div class="menu-item">
-                    <h5>Bread Basket</h5>
+                <ul class="menu-type shadow">
+                    <li><a class="active" href="#eat">Eat</a></li>
+                    <li><a href="#drink">Drink</a></li>
+                </ul>
+                <div class="menu-item shadow">
+                    <h4>Bread Basket</h4>
                     <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-                    <h5>Honey Almond Granola with Fruits</h5>
+                    <h4>Honey Almond Granola with Fruits</h4>
                     <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-                    <h5>Belgian Waffle</h5>
+                    <h4>Belgian Waffle</h4>
                     <p>Vanilla flavoured batter with malted flour 7.50</p>
-                    <h5>Scrambled eggs</h5>
+                    <h4>Scrambled eggs</h4>
                     <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                    <h5>Blueberry Pancakes</h5>
+                    <h4>Blueberry Pancakes</h4>
                     <p>With syrup, butter and lots of berries 8.50</p>
                 </div>
                 <div class="menu-img">
@@ -92,18 +90,21 @@
 
         <!-- Location page start -->
         <div class="map-page" id="location">
-            <div class="page-wrapper">
-                <h2>WHERE TO FIND US</h2>
+            <div class="page-wrapper letter-style map-pg-wrap">
+                <div class="heading">
+                    <h2>WHERE TO FIND US</h2>
+                </div>
                 <p>Find us at some address at some place.</p>
                 <div class="map-img">
                     <img src="./img/map.jpg" alt="location map">
                 </div>
-                <p><strong>FYI!</strong> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p style="margin-top: 15px;"><strong style="background-color: black; color: white; padding: 7px 8px;">FYI!</strong> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
                 <p><strong>Reserve</strong> a table, ask for today's special or just send a message:</p>
                 <div class="contact-form">
                     <input type="text" name="name" placeholder="Name">
                     <input type="number" name="people" placeholder="How many people">
-                    <input type="datetime-local" name="date">
+                    <input type="datetime-local" name="date" placeholder="Date and Time" value="2023-01-19T10:00">
+                    <input type="text" name="message" placeholder="Messgae \ Special requirements">
                     <button type="button" class="btn">SEND MESSAGE</button>
                 </div>
             </div>
